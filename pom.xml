@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>template</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>template</name>
+	<name>82265627</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -30,11 +30,30 @@
 		<java.version>17</java.version>
 	</properties>
 
+	
+	<repositories>
+		<!-- lib import 용 repository 설정 -->
+		<repository>
+		<id>github</id>
+		<url>https://maven.pkg.github.com/pjp1211/82265627</url>
+		</repository>
+	</repositories>
+
+	<!-- package publish용 repository 설정 -->
+	<distributionManagement>
+		<repository>
+		<id>github</id>
+		<name>GitHub pjp1211 Apache Maven Packages</name>
+		<url>https://maven.pkg.github.com/pjp1211/82265627</url>
+		</repository>
+	</distributionManagement>
+	
+	
 	<dependencies>
 	    <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
+       	 </dependency>
         
         <dependency>
             <groupId>org.springframework.boot</groupId>
