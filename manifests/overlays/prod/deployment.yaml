@@ -10,7 +10,7 @@ spec:
       containers:
         - name: "82265627"
           command: ["java","-jar","/app.jar"]
-          args: ["--spring.config.location=file:/config/application.yml"]
+          args: ["--spring.config.location=file:/config/application.yaml"]
           volumeMounts:
           - mountPath: /mnt/82265627
             name: 82265627-volume
@@ -29,6 +29,6 @@ spec:
         configMap:
           name: 82265627-configmap
           items:
-            - key: application.yml
-              path: application.yml
+            - key: application.yaml
+              path: application.yaml
           defaultMode: 420
